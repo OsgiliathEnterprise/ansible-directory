@@ -1,10 +1,7 @@
 """Role testing files using testinfra."""
 
 
-def test_hosts_file(host):
-    """Validate /etc/hosts file."""
-    f = host.file("/etc/hosts")
-
-    assert f.exists
-    assert f.user == "root"
-    assert f.group == "root"
+def test_389_ds_is_installed(host):
+    command = """rpm -qa | grep 389-ds"""
+    cmd = host.run(command)
+    assert '389-ds' in cmd.stdout

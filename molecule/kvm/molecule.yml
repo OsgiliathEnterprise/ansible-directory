@@ -7,16 +7,25 @@ dependency:
 driver:
   name: vagrant
   provider:
-    name: virtualbox
-
+    name: libvirt
 lint: yamllint . && flake8 && ansible-lint --exclude=meta
 platforms:
-  - name: Fedora-Molecule-Directory
+  - name: Fedora-Molecule-virtualization-Guest
     box: fedora/31-cloud-base
-    memory: 8192
     cpus: 4
+    memory: 4096
+    instance_raw_config_args:
+      - "vm.network :forwarded_port, guest: 6752, host: 6752, protocol: 'tcp'"
+    provider_raw_config_args:
+      - "storage :file, :size => '1G', :device => 'vdb'"
 provisioner:
   name: ansible
+  config_options:
+    defaults:
+      forks: 20
+    ssh_connection:
+      pipelining: true
+      ssh_args: -o ControlMaster=auto -o ControlPersist=600s
   env:
     ANSIBLE_ROLES_PATH: ../../..:../../../community
 verifier:
