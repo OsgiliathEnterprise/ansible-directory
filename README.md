@@ -7,6 +7,7 @@ Installs and configures 389-ds, set TLS and permit addition and removal of users
 * Lint, Tests & requirements: ![Molecule](https://github.com/OsgiliathEnterprise/ansible-directory/workflows/Molecule/badge.svg)
 * Chat: [![Join the chat at https://gitter.im/OsgiliathEnterprise/platform](https://badges.gitter.im/OsgiliathEnterprise/platform.svg)](https://gitter.im/OsgiliathEnterprise/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+:warning: In progress and blocked by many other ansible roles to achieve before. see [roadmap](https://github.com/OsgiliathEnterprise/platform/issues/55) for more informations 
 
 Requirements
 ------------
