@@ -4,7 +4,8 @@ Directory
 Installs and configures 389-ds, set TLS and permit addition and removal of users and groups.
 
 * Galaxy: [![Ansible Galaxy](https://img.shields.io/badge/galaxy-tcharl.ansible_directory-660198.svg?style=flat)](https://galaxy.ansible.com/tcharl/ansible_directory)
-* Lint, Tests & requirements: ![Molecule](https://github.com/OsgiliathEnterprise/ansible-directory/workflows/Molecule/badge.svg)
+* Lint, requirements: ![Molecule](https://github.com/OsgiliathEnterprise/ansible-directory/workflows/Molecule/badge.svg)
+* Tests : ![Molecule](https://travis-ci.com/OsgiliathEnterprise/ansible-directory.svg?branch=master)
 * Chat: [![Join the chat at https://gitter.im/OsgiliathEnterprise/platform](https://badges.gitter.im/OsgiliathEnterprise/platform.svg)](https://gitter.im/OsgiliathEnterprise/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 :warning: In progress and blocked by many other ansible roles to achieve before. see [roadmap](https://github.com/OsgiliathEnterprise/platform/issues/55) for more informations 
