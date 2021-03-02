@@ -1,5 +1,6 @@
 galaxy_info:
-  author: Charlie Mordant
+  role_name: ansible_directory
+  author: OsgiliathEnterprise
   description: Install and configures 389-ds
   company: Osgiliath corp
 
