@@ -3,6 +3,9 @@
 dist: bionic
 
 language: python
+python:
+  - "3.8"
+
 addons:
   apt:
     sources:
@@ -24,8 +27,6 @@ addons:
       - iproute2
       - sudo
       - vagrant
-python:
-  - "3.8"
 
 install:
   - vagrant plugin install vagrant-libvirt
