@@ -3,6 +3,7 @@ galaxy_info:
   author: OsgiliathEnterprise
   description: Install and configures 389-ds
   company: Osgiliath corp
+  namespace: tcharl
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
