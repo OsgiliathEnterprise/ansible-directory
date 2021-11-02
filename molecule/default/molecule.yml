@@ -3,7 +3,7 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-    roles-path: ../community
+    roles-path: ${MOLECULE_PROJECT_DIRECTORY}/../community
 driver:
   name: vagrant
   provider:
@@ -24,7 +24,7 @@ platforms:
 provisioner:
   name: ansible
   env:
-    ANSIBLE_ROLES_PATH: ${ANSIBLE_ROLES_PATH}:../../../community
+    ANSIBLE_ROLES_PATH: "${MOLECULE_PROJECT_DIRECTORY}/..:${MOLECULE_PROJECT_DIRECTORY}/../community:${ANSIBLE_ROLES_PATH}"
 verifier:
   name: testinfra
   env:
