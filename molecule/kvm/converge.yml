@@ -1,1 +1,8 @@
-../default/converge.yml
+---
+- name: Converge
+  hosts: all
+  vars:
+    company_domain: osgiliath.net
+    ds_admin_password: passw0rd
+  roles:
+    - role: ansible-directory

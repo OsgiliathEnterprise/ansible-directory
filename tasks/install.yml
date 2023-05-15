@@ -1,7 +1,7 @@
 ---
 
 - name: ansible-directory | install | 389-ds packages
-  package:
+  ansible.builtin.package:
     name:
       - 389-ds-base
       - 389-ds-base-libs
